@@ -1,5 +1,5 @@
 let previousScrollPosition = window.pageYOffset;
-const topBar = document.querySelector('.menu-lines');
+const topBar = document.querySelector('header');
 
 
 window.addEventListener('scroll', () => {
@@ -19,7 +19,9 @@ window.addEventListener('scroll', () => {
 
 function openMenu(){
   const menu = document.getElementById('menu');
-    const buttom = document.getElementById('menu-lines');
-    buttom.classList.toggle('open')
-    menu.classList.toggle('open');
+  const buttom = document.getElementById('menu-lines');
+  const line = document.getElementsByClassName('line');
+  buttom.classList.toggle('open');
+  menu.classList.toggle('open');
+  line.classList.toggle('open');
   }
