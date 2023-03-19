@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media-querry.css">
+    
     <title>My Portfolio</title>
 </head>
 <body>
@@ -18,41 +20,45 @@
             </div>
             <div class="menu-open" id="menu">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">MySkils</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">MySkills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="home">
-            <article class="start">
-                <div class="sub-title">Olá, meu nome é:</div>
-                <div class="big-text"> Gabriel Vilasboa.</div>
-                <div class="sub-text"> Estou Sempre em busca de Soluções!</div>
-                <div class="text">Sou um engenheiro de software com conhecimentos em várias áreas do desenvolvimento,
-                átuo com desenvolvimento Web e desenvolvimento nativo Android.
-                </div>
-            </article>
-        </section>
 
-        <section class="about-me">
-            
-            <article>
+        <div class="risco"></div>
+        <section id="home">
+            <article class="start">
+                <div class="presentation">
+                    <div class="sub-title">Olá, meu nome é:</div>
+                    <div class="big-text"> Gabriel Vilasboa.</div>
+                    <div class="sub-text"> Estou Sempre em busca de Soluções!</div>
+                    <div class="text">Sou um engenheiro de software com conhecimentos em várias áreas do desenvolvimento,
+                    átuo com desenvolvimento Web e desenvolvimento nativo Android.
+                    </div>
+                </div>
                 <img class="myPhoto" src="./imgs/myPhoto.png" alt="GabrielVilasboa">
                 <div class="text">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora cumque reiciendis eaque totam maiores ipsum quia numquam
-                     recusandae unde. Molestiae animi dolores iusto beatae distinctio sapiente in rem quae laboriosam.
+                    <div class="big-text">Sobre mim:</div>
+                    Olá me chamo Gabriel, meu interesse pelo desenvolvimento começou em 2021. comecei a faculdade de engenharia de software
+                    e comecei a me desenvolver com diversos cursos, aprendi sobre as áreas do desenvolvimento e sobre como funciona esse imenso
+                    mundo da tecnologia. Durante um grande tempo eu não trabalhava na área mas sempre estava criando projetos próprios para 
+                    aumentar meu conhecimento. Com isso adquiri uma grande experiencia em diversas tecnologias além da habilidade de encontrar
+                    soluções. Alguns dos meus projetos estão no meu <a href="https://github.com/GabrielVilasboa" target="_blank">Github</a>.
+                    Com minhas expériencias adquiri muito interesse pelo desenvolvimento web e Android mobile. 
                 </div>
+
             </article>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <article>
-                <div class="big-text" id="container">My Skills</div>
+                <div class="big-text">My Skills</div>
                     <div class="content">
                         <div class="frame">
                             JavaScript
@@ -87,7 +93,13 @@
                         <div class="frame">
                             Java
                             <div class="icon">
-                                <img src="./Icons/java-icon.png" alt="javascript-icon">
+                                <img src="./Icons/java-icon.png" alt="java-icon">
+                            </div>
+                        </div>
+                        <div class="frame">
+                            Java
+                            <div class="icon">
+                                <img src="./Icons/android-studio-icon.png" alt="android-studio-icon">
                             </div>
                         </div>
                     </div>
@@ -96,7 +108,7 @@
             </article>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="projects">
             <article>
                 <div class="big-text" > My Projects</div>
 
@@ -114,7 +126,7 @@
             </article>
         </section>
 
-        <section class="contact">
+        <section id="contact">
 
             <article class="center">
                 <div class="big-text">
@@ -133,6 +145,7 @@
 
 
     </main>
-    <script src="javaScript.js"></script>
+    <script src="/scripts/javaScript.js"></script>
+    <script src="/scripts/skils.js"></script>
 </body>
 </html>

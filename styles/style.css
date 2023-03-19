@@ -12,6 +12,18 @@
     list-style: none;
 }
 
+.risco{
+    position: fixed;
+    z-index: 1000;
+    background-color: #000f1b;
+    height: 100vh;
+    background-attachment: fixed;
+    width: 1px;
+}
+html {
+    font-size: 16px;
+}
+
 body{
     background-color: var(--bgColor);
 }
@@ -94,6 +106,7 @@ button{
     width: 100%;
     height: 100%; 
     flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     
@@ -130,6 +143,10 @@ button{
     margin-top: 1em;
 }
 
+.text > .big-text{
+    margin-bottom: 1em;
+}
+
 .center{
     text-align: center;
 }
@@ -142,8 +159,9 @@ button{
 
 .myPhoto{
     display: block;
+    margin-top: 3em;
     margin-bottom: 3em;
-    max-height: 18em;
+    max-height: 20em;
     box-shadow: 10px 10px 0 2px var(--mainColor);
     border-radius: 8px;
     background-color: var(--mainColorTranparent);
@@ -159,7 +177,16 @@ button{
     position: relative;
     width: 100%;
     overflow: hidden;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
+.skills .big-text{
+    margin: auto;
+
+}
+
 .content{
     display: flex;
     flex-wrap: nowrap;
@@ -169,12 +196,9 @@ button{
 
 .frame{
     font-size: 2em;
-    width: 15em;
+    width: 100vw;
     text-align: center;
     margin-top: 2em;
-}
-.frame:nth-child(1){
-    margin-left: 15em;
 }
 
 .icon > img{
@@ -210,7 +234,7 @@ button{
     border-radius: 1.5em;
     margin-top: 1em;
     height: 21.5em;
-    width: 100%;
+    width: 21.5em;
     justify-content: center;
     align-items: center;
     transition: background-color .5s;
