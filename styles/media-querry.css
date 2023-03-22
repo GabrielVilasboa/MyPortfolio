@@ -8,7 +8,6 @@
 */
 @media screen and (min-width: 750px) {
     article{
-        height: calc(100vh - 8em);
         width: 44em;
         display: flex;
         justify-content: space-between;
@@ -18,7 +17,6 @@
     .text{
         font-size: 1.3em;
     }
-
     .presentation{
         width: 21em;
     }
@@ -40,12 +38,33 @@
         margin-top: 1em;        
 
     }
+    .projects .big-text{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .projects article{
+        width: 48em;
+    }
+    .project{
+        margin: 1em;
+    }
 }
 
 @media screen and (min-width: 1000px) {
-
     .frame{
         width: 50vw;
     }
     
+}
+
+@media screen and (min-width: 1500px){
+    .frame{
+        width: 25vw;
+    }
+    .icon > img{
+        width: 8em;
+        margin-top: 1em;        
+    }
 }

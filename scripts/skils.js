@@ -23,9 +23,11 @@ buttonNext.addEventListener('click', moveForNext);
 
 function moveForPrev(){
     if(screenWidth < 1000){
-    forPrev(0, screenWidth);
+        forPrev(0, screenWidth);
     }else if(screenWidth < 1500){
-      forPrev(0, (screenWidth/2));
+        forPrev(0, (screenWidth/2));
+    }else if(screenWidth >= 1500){
+        forPrev(0, (screenWidth/4));
     }
 }
 
@@ -33,7 +35,9 @@ function moveForNext(){
     if(screenWidth < 1000){
         forNext((screenWidth * (-6)), screenWidth);
     }else if(screenWidth < 1500){
-      forNext((screenWidth * (-2.5)), (screenWidth/2));
+        forNext((screenWidth * (-2.5)), (screenWidth/2));
+    }else if(screenWidth >= 1500){
+        forNext((screenWidth * (-0.75)), (screenWidth/4));
     }
 }
 
